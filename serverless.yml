@@ -1,0 +1,17 @@
+service: serverless-express-project
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: handler/handler.api
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+
+plugins:
+  - serverless-offline

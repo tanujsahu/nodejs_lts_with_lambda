@@ -1,0 +1,35 @@
+{
+  "name": "nodejs_lts_with_lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serverless offline",
+    "deploy": "serverless deploy",
+    "remove": "serverless remove",
+    "logs": "serverless logs --tail",
+    "invoke": "serverless invoke local --function api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanujsahu/nodejs_lts_with_lambda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanujsahu/nodejs_lts_with_lambda/issues"
+  },
+  "homepage": "https://github.com/tanujsahu/nodejs_lts_with_lambda#readme",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1672.0",
+    "aws-serverless-express": "^3.4.0",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^14.0.0"
+  }
+}

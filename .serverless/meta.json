@@ -1,0 +1,51 @@
+{
+  "D:\\COMMON\\NODEJS\\nodejs_lts_with_lambda": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.21",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "servicePath": "D:\\COMMON\\NODEJS\\nodejs_lts_with_lambda",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "serverless-express-project",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs20.x",
+        "region": "us-east-1"
+      },
+      "functions": {
+        "api": {
+          "handler": "handler/handler.api",
+          "events": [
+            {
+              "http": {
+                "path": "/{proxy+}",
+                "method": "any"
+              }
+            }
+          ]
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ]
+    },
+    "serviceRawFile": "service: serverless-express-project\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: nodejs20.x\r\n  region: us-east-1\r\n\r\nfunctions:\r\n  api:\r\n    handler: handler/handler.api\r\n    events:\r\n      - http:\r\n          path: /{proxy+}\r\n          method: any\r\n\r\nplugins:\r\n  - serverless-offline\r\n",
+    "command": [
+      "offline"
+    ],
+    "options": {},
+    "error": {
+      "message": "Unauthorized",
+      "stack": "Error: Unauthorized\n    at AccessKeysV2Client.makeRequest (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:217:422386)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async AccessKeysV2Client._get (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:217:421472)\n    at async Authentication.authenticate (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:953:10491)\n    at async Authentication.authenticate (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:953:15561)\n    at async Authentication.authenticate (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:953:14829)\n    at async Authentication.getAuthenticatedData (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:951:10674)\n    at async Authentication.resolverAuthenticate (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:953:20540)\n    at async _Meta.authenticateAndResolve (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:961:10866)\n    at async route (file:///C:/Users/rohit/.serverless/releases/4.1.21/package/dist/sf-core.js:961:16306)"
+    },
+    "machineId": "dc4fe7bf93f0e75ff5fe495afffe7be0",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
