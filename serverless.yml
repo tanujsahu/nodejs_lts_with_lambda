@@ -15,3 +15,7 @@ functions:
 
 plugins:
   - serverless-offline
+
+custom:
+  serverless-offline:
+    stage: local
