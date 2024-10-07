@@ -38,7 +38,6 @@ This project sets up an Express.js application running on AWS Lambda using the S
    git clone https://github.com/your-username/serverless-express-project.git
    cd serverless-express-project
 
-
 ## Install Dependencies
 
         npm install
@@ -102,9 +101,6 @@ This project sets up an Express.js application running on AWS Lambda using the S
 ## DELETE /api/items/
         Description: Delete an item by ID.
         Response: Confirmation of deletion.
-
-
-
 
 
 ### Key Points Covered
